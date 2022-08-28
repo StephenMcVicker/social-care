@@ -82,7 +82,7 @@ export default {
 
 body,
 html {
-  background-color: $background-grey;
+  background-color: $background-primary;
   color: $primary-font-color;
   font-family: 'Montserrat', sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -100,7 +100,7 @@ html {
 }
 
 .body {
-  background-color: $background-grey;
+  background-color: $background-primary;
   max-width: 100vw;
   min-height: 100vh;
   min-width: 100vw;
