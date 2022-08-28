@@ -2,13 +2,13 @@ ls
 <template lang="pug">
   .body
     header
-      nav
+      nav(v-if="!hideMenu")
         .logo
         ham-burger-menu(:menuIsOpen='menuOpen',
                         @toggle-menu='toggleMenu')
     .menu(:data-open='menuOpen')
     nuxt-child
-    footer
+    footer(v-if="!hideNav")
       .circle(@click="setActiveTab(1)"
               to="/"
               v-wave
@@ -43,6 +43,12 @@ export default {
   computed: {
     activeTab() {
       return this.$store.getters['ui/getNavActiveTab'];
+    },
+    hideMenu() {
+      return this.$store.getters['ui/getHideMenu'];
+    },
+    hideNav() {
+      return this.$store.getters['ui/getHideNav'];
     },
     menuOpen() {
       return this.$store.getters['ui/getMenuOpen'];
