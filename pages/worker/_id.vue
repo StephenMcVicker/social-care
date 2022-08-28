@@ -16,7 +16,7 @@ export default {
   middleware: ['test-workers'],
   computed: {
     worker () {
-      return this.$store.getters[`workers/get`].filter(worker => worker.id === this.routeID);
+      return this.$store.getters[`workers/get`].find(worker => worker.id === this.routeID);
     },
     routeID () {
       return this.$route.params.id ? parseInt(this.$route.params.id) : 0;
