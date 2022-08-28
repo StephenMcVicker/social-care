@@ -15,7 +15,7 @@ ls
               :class="{active: activeTab === 1}")
         font-awesome-icon(:icon="['fas', 'home']")
       .circle(@click="setActiveTab(2)"
-              to="/TestPage/" 
+              to="/TestPage/"
               v-wave
               :class="{active: activeTab === 2}")
         font-awesome-icon(:icon="['fas', 'calendar-week']")
@@ -82,7 +82,7 @@ export default {
 
 body,
 html {
-  background-color: $background-blue;
+  background-color: $background-grey;
   color: $primary-font-color;
   font-family: 'Montserrat', sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -100,7 +100,7 @@ html {
 }
 
 .body {
-  background-color: $background-blue;
+  background-color: $background-grey;
   max-width: 100vw;
   min-height: 100vh;
   min-width: 100vw;

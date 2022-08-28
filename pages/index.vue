@@ -9,11 +9,11 @@
       input(v-model="search"
             placeholder="Search by name"
             type="text")
-      p(@click="sortingChange") {{ $t('sortWorkers') }}
+      p.sorting(@click="sortingChange") {{ $t('sortWorkers') }}
         span {{ this.sortBy }}
       section.results
         worker(v-for="(worker, workerIndex) in filteredWorkers"
-              :key="`worker-${workerIndex}`" 
+              :key="`worker-${workerIndex}`"
               :worker="worker")
 </template>
 
@@ -93,6 +93,10 @@ section.workers-search {
       color: $primary-purple;
       margin-left: .4rem;
     }
+  }
+
+  p.sorting {
+    margin-top: 1rem;
   }
 
   section.results {

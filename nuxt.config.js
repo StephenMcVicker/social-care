@@ -1,4 +1,4 @@
-export default {  
+export default {
   ssr: false,
   target: 'static',
   modern: true,
@@ -54,7 +54,6 @@ export default {
   },
 
   i18n: {
-    baseUrl: 'https://www.bonkers.ie',
     defaultLocale: 'en',
     detectBrowserLanguage: {
       alwaysReload: true,

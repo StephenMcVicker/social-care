@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  margin: 1rem 0;
+  margin-bottom: 1.5rem;
 
   a,
   button {
