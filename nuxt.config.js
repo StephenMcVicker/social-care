@@ -1,6 +1,9 @@
 export default {
   ssr: false,
   target: 'static',
+  router: {
+    base: '/social-care/'
+  },
   modern: true,
 
   head: {
