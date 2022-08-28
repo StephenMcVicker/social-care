@@ -19,7 +19,7 @@
       font-awesome-icon(:icon="['fas', 'clock']")
       p Availability:
       strong {{ worker.availability }}
-    v-button(@btn-click="changeRoute") Hire
+    v-button(@btn-click="hireWorker") Hire
 </template>
 
 <script>
@@ -49,7 +49,12 @@ export default {
   },
   methods: {
     changeRoute() {
-      this.$router.push('TestPage');
+      // this.$router.push('TestPage');
+    },
+    hireWorker() {
+      // console.log(`Looking to hire ${this.fullName}. Details:`, this.worker);
+      this.$store.commit('worker/set', this.worker);
+      this.$router.push(`/worker/${this.worker.id}`);
     }
   }
 };

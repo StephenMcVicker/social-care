@@ -111,10 +111,6 @@ html {
 main {
   padding: 0 1rem 8rem 1rem;
 }
-
-section {
-  border-bottom: 1px solid $grey;
-}
 </style>
 
 <style lang="scss" scoped>

@@ -1,6 +1,7 @@
 export default () => {
   return new Promise((resolve) => {
     resolve({
+      "goBack": "Go Back",
       "greeting": "Hi, {name}",
       "nearbyWorkers": "Nearby Social Workers",
       "sortWorkers": "sort by:",
